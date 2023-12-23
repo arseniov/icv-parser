@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  icvparser:
+    container_name: icvparser
+    image: ghcr.io/arseniov/icv-parser/icv-parser:latest
+    ports:
+      - "8051:8501"
+    environment:
+        ICV_USERNAME: "your iCV username"
+        ICV_PASSWORD: "your iCV password"
